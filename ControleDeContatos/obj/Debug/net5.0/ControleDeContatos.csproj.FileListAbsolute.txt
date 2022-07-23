@@ -355,3 +355,6 @@ D:\Repositorios_meuGitHub\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0
 D:\Repositorios_meuGitHub\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\ControleDeContatos.genruntimeconfig.cache
 D:\Repositorios_meuGitHub\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\ref\ControleDeContatos.dll
 D:\Repositorios_meuGitHub\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\Razor\Views\Contato\Index.cshtml.g.cs
+D:\Repositorios_meuGitHub\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\Razor\Views\Contato\Criar.cshtml.g.cs
+D:\Repositorios_meuGitHub\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\Razor\Views\Contato\Editar.cshtml.g.cs
+D:\Repositorios_meuGitHub\ControleDeContatos\ControleDeContatos\obj\Debug\net5.0\Razor\Views\Contato\ApagarConfirmacao.cshtml.g.cs

@@ -3,7 +3,7 @@
 }
 <div class="text-center">
     <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
-        <a class="btn btn-primary" role="button">Adicionar novo contato</a>
+        <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar novo contato</a>
     </div>
     </br>
     <h1 Class = "display-4">Listagem de Contatos</h1>
@@ -26,8 +26,8 @@
       <td>11 989099909</td>
       <td>
           <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-               <button type="button" class="btn btn-warning">Editar</button>
-               <button type="button" class="btn btn-danger">Apagar</button>
+               <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+               <a role="button" class="btn btn-danger"  asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
           </div>
       </td>
     </tr>
@@ -38,8 +38,8 @@
       <td>11 912345332</td>
       <td>
          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-warning">Editar</button>
-               <button type="button" class="btn btn-danger">Apagar</button>
+                <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+                <a role="button" class="btn btn-danger"  asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
           </div>
       </td>
     </tr>
@@ -50,8 +50,8 @@
       <td>11 909871234</td>
       <td>
            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-warning">Editar</button>
-               <button type="button" class="btn btn-danger">Apagar</button>
+                <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
+                <a role="button" class="btn btn-danger"  asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
           </div>
       </td>
     </tr>
