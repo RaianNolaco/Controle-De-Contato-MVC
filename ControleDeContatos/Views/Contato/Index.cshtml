@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<ContatoModel>
+@{
     ViewData["Title"] = "Listagem de contatos";
 }
 <div class="text-center">
@@ -19,42 +20,24 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto@gmail.com</td>
-      <td>11 989099909</td>
-      <td>
-          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-               <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
-               <a role="button" class="btn btn-danger"  asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
-          </div>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton@hotmail.com</td>
-      <td>11 912345332</td>
-      <td>
-         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
-                <a role="button" class="btn btn-danger"  asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
-          </div>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>Larry@gmail.com</td>
-      <td>11 909871234</td>
-      <td>
-           <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                <a role="button" class="btn btn-warning" asp-controller="Contato" asp-action="Editar">Editar</a>
-                <a role="button" class="btn btn-danger"  asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
-          </div>
-      </td>
-    </tr>
-  </tbody>
+            @if(Model != null && Model.Any())
+            {
+                foreach (ContatoModel contato in Model)
+                {
+                   <tr>
+                      <th scope="row">@contato.Id</th>
+                      <td>@contato.Nome</td>
+                      <td>@contato.Email</td>
+                      <td>@contato.Numero</td>
+                      <td>
+                          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                               <a role="button" class="btn btn-warning" asp-route-id="@contato.Id" asp-controller="Contato" asp-action="Editar">Editar</a>
+                               <a role="button" class="btn btn-danger"  asp-route-id="@contato.Id" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                          </div>
+                      </td>
+                    </tr>   
+                }
+            }
+        </tbody>
 </table>
 </div>
