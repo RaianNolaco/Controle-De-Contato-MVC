@@ -15,3 +15,4 @@ Projeto esta sendo feito com base na playlist <a href ="https://www.youtube.com/
 <br><b>R</b> => Read   (Ler)
 <br><b>U</b> => Update (Atualizar)
 <br><b>D</b> => Delete (Deletar)
+Uma aqui uma breve e mais detalhada explicação sobre <a href="https://www.youtube.com/watch?v=8jcawcG2veY">CRUD</a> 
