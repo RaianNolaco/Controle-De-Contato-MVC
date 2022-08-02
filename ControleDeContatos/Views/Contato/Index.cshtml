@@ -7,6 +7,24 @@
         <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar novo contato</a>
     </div>
     </br>
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-success btn-sm close-alert" aria-label="close">X</button>
+              @TempData["MensagemSucesso"]  
+        </div>
+    }
+
+    @if(TempData["MensagemErro"] != null)
+    {   
+        <div class="alert alert-danger" role="alert">
+             <button type="button" class="btn btn-danger btn-sm close-alert" aria-label="close">X</button>
+            @TempData["MensagemErro"]
+        </div>        
+    }
+
+
     <h1 Class = "display-4">Listagem de Contatos</h1>
 
 <table class="table">

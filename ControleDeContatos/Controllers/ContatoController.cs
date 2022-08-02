@@ -39,23 +39,70 @@ namespace ControleDeContatos.Controllers
         [HttpPost]
         public IActionResult Criar(ContatoModel contato)
         {
-            _contatoRepositorio.Adicionar(contato);
-            return RedirectToAction("Index");
+            try
+            {
+                //verifica se está tudo validado
+                if (ModelState.IsValid)
+                {
+                    _contatoRepositorio.Adicionar(contato);
+                    TempData["MensagemSucesso"] = "Contato cadastrado com sucesso!";
+                    return RedirectToAction("Index");
+
+                }
+                return View(contato);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops, algo deu errado, tente novamente, detalhes do arro:{erro.Message}";
+                return RedirectToAction("Index");
+            }
 
         }
 
         [HttpPost]
         public IActionResult Editar(ContatoModel contato)
         {
-            _contatoRepositorio.Atualizar(contato);
-            return RedirectToAction("Index");
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _contatoRepositorio.Atualizar(contato);
+                    TempData["MensagemSucesso"] = "Contato editato com sucesso!";
+                    return RedirectToAction("Index");
+                }
+
+                return View(contato);
+
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops, algo deu errado, tente novamente, detalhes do arro: {erro.Message}";
+                return RedirectToAction("Index");
+            }            
         }
 
         [HttpGet]
         public IActionResult Apagar(int id)
         {
-            _contatoRepositorio.Apagar(id);
-            return RedirectToAction("Index");
+            try
+            {
+                if (_contatoRepositorio.Apagar(id))
+                {
+                    TempData["MensagemSucesso"] = "Contato apagado com sucesso!";
+                }
+                else
+                {
+                    TempData["MensagemErro"] = $"Ops, algo deu errado, tente novamente";
+                }
+                return RedirectToAction("Index");
+
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops, algo deu errado, tente novamente, detalhos do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+            
         }
     }
 }
