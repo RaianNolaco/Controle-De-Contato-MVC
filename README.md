@@ -16,3 +16,8 @@ Projeto esta sendo feito com base na playlist <a href ="https://www.youtube.com/
 <br><b>U</b> => Update (Atualizar)
 <br><b>D</b> => Delete (Deletar)
 Uma aqui uma breve e mais detalhada explicação sobre <a href="https://www.youtube.com/watch?v=8jcawcG2veY">CRUD</a> 
+
+# Como rodar o projeto?
+
+- ### Baixar e intalar o SQL Server Management Studio
+O SQL Server Management Studio serve para adiministrarmos nosso banco de dados fazendo açoes diretamente no banco caso necessario , tambem serve para termos nosso mini servidor para que possa mos rodo nosso projeo , achei um breve tutorial que ensina <a href ="https://ajuda.hiper.com.br/hc/pt-br/articles/360055727811-Como-instalar-o-SSMS-SQL-Server-Management-Studio-">baixar e intalar o SSMS</a>
