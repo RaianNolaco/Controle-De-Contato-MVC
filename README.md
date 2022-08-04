@@ -8,7 +8,7 @@ Projeto esta sendo feito com base na playlist <a href ="https://www.youtube.com/
 - SQL server
 - Bootstrap 5
 
-## o que é MVC?
+## O que é MVC?
    A sigla MVC significa Model-View-Control, e um padrão de arquitetura muito ultilizado em projetos WEB, o intuito do MVC é dividir o projeto em 3 partes Models, views e controlers para que fique mais facil serparar a interface das regras de negocio.<br>
 <br><b>Model</b>: Responsavel pela consulta e manipulação dos dados na aplicação.
 <br><b>View</b>: Responsavel pela interface apresentada para o usuario.
