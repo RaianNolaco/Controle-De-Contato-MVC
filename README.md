@@ -32,6 +32,10 @@ O SQL Server Management Studio serve para adiministrarmos nosso banco de dados f
 Apos ter beixado,intalado e conectado seu SQL server, devemos alterar a string que diz qual banco de dados o programa deve mexer, para isso vá ao arquivo "appsettings.json"
 <br>![image](https://user-images.githubusercontent.com/81272272/182740663-1d60ffb7-3661-444e-803e-f6023e12397d.png)
 <br>abrindo a pasta você verá uma string com o nome "DataBase"
-<br>![image](https://user-images.githubusercontent.com/81272272/182741256-032814cc-2100-45c5-981b-a725f228758a.png)
+<br>![image](https://user-images.githubusercontent.com/81272272/182742550-0a458362-77a5-486e-b259-ec4f846aa5c4.png)
+<br>existem algumas formas para alterar a string de conexão caso você use Autentificação do windows
+<br>![image](https://user-images.githubusercontent.com/81272272/182742719-3f393e41-4892-4df5-bd83-243b860a880b.png)
+<br>troque o nome que estiver apos localhost pelo nome do seu servidor que você pode ver no seu SSMS
+<br>![image](https://user-images.githubusercontent.com/81272272/182742848-725aaddd-7df6-4150-ac2b-ef15da8dcfbf.png)
 
 
