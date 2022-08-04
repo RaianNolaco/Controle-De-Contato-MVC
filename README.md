@@ -33,9 +33,18 @@ Apos ter beixado,intalado e conectado seu SQL server, devemos alterar a string q
 <br>![image](https://user-images.githubusercontent.com/81272272/182740663-1d60ffb7-3661-444e-803e-f6023e12397d.png)
 <br>abrindo a pasta você verá uma string com o nome "DataBase"
 <br>![image](https://user-images.githubusercontent.com/81272272/182742550-0a458362-77a5-486e-b259-ec4f846aa5c4.png)
-<br>existem algumas formas para alterar a string de conexão caso você use Autentificação do windows
+<br>existem algumas formas para alterar a string de conexão caso você use
+- Autentificação do windows:
 <br>![image](https://user-images.githubusercontent.com/81272272/182742719-3f393e41-4892-4df5-bd83-243b860a880b.png)
 <br>troque o nome que estiver apos localhost pelo nome do seu servidor que você pode ver no seu SSMS
 <br>![image](https://user-images.githubusercontent.com/81272272/182742848-725aaddd-7df6-4150-ac2b-ef15da8dcfbf.png)
+<br>e por fim ficará assim :
+<br>![image](https://user-images.githubusercontent.com/81272272/182743003-b7ba01ee-cc2a-4e10-847c-d6a7e8085f9b.png)
+<br>string: ``` "Server=localhost\\[NOME_DO_SEU_SERVIDOR];Database=DB_SistemaContatos;Trusted_Connection=True;" ```
+<br>
+- Usuario e senha
+no caso de se ultilizar usuario e senha devesse trocar essa string por está 
+<br>string ``` "Server=./;Database=DB_SistemaContatos;User Id=[SEU_USER];Password=[SUA_SENHA]" ```
+
 
 
