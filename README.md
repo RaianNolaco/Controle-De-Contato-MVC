@@ -46,6 +46,12 @@ Apos ter beixado,intalado e conectado seu SQL server, devemos alterar a string q
 - Usuario e senha: 
 <br>no caso de se ultilizar usuario e senha devesse trocar essa string por está 
 <br>string: ``` "Server=localhost\\[NOME_DO_SEU_SERVIDOR];Database=DB_SistemaContatos;Trusted_Connection=True;" ```
+
+
+- ### 3° Estabelecer a conexão com o banco de dados
+Agora o ultimo temos que conectar nossa aplicação ao banco ultiliamos o comando
+<br> ``` Update-Database -Context BancoContext ``` 
+![image](https://user-images.githubusercontent.com/81272272/182747973-a7b78fef-8511-41c6-92ec-0b0b6e1106f1.png)
  
 
 
