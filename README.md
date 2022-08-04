@@ -25,5 +25,13 @@ Uma aqui uma breve e mais detalhada explicação sobre <a href="https://www.yout
 
 # Como rodar o projeto?
 
-- ### Baixar e intalar o SQL Server Management Studio
+- ### 1° Baixar e intalar o SQL Server Management Studio
 O SQL Server Management Studio serve para adiministrarmos nosso banco de dados fazendo açoes diretamente no banco caso necessario , tambem serve para termos nosso mini servidor para que possa mos rodo nosso projeo , achei um breve tutorial que ensina <a href ="https://ajuda.hiper.com.br/hc/pt-br/articles/360055727811-Como-instalar-o-SSMS-SQL-Server-Management-Studio-">baixar e intalar o SSMS</a>
+
+- ### 2° Editar a String de conexão
+Apos ter beixado,intalado e conectado seu SQL server, devemos alterar a string que diz qual banco de dados o programa deve mexer, para isso vá ao arquivo "appsettings.json"
+<br>![image](https://user-images.githubusercontent.com/81272272/182740663-1d60ffb7-3661-444e-803e-f6023e12397d.png)
+<br>abrindo a pasta você verá uma string com o nome "DataBase"
+<br>![image](https://user-images.githubusercontent.com/81272272/182741256-032814cc-2100-45c5-981b-a725f228758a.png)
+
+
