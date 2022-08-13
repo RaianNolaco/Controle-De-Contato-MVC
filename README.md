@@ -53,5 +53,5 @@ Agora o ultimo temos que conectar nossa aplicação ao banco ultiliamos o comand
 <br> ``` Update-Database -Context BancoContext ``` 
 ![image](https://user-images.githubusercontent.com/81272272/182747973-a7b78fef-8511-41c6-92ec-0b0b6e1106f1.png)
  
-
+## ⚠️!LEMBRE-SE DE MUDAR A CONNECTIONSTRING NO APPSETTINGS.JSON!⚠️
 
